@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imgs/email.png"/>
+  <title>Sample Form - Template</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+ <form
+  action="https://formspree.io/f/mpqypyla"
+  method="POST"
+ >
+  <fieldset>
+    <legend>Build Your Own Pizza Order</legend>
+
+    <label for="name_id">Your Name</label>
+    <input type="text" placeholder="Enter Your Name" id = "name_id" name="Name" required>
+
+    <label for="delivery_id">Delivery Instructions</label>
+    <input type="text" placeholder="Enter Delivery Insturctions" id="delivery_id" name="Instruction">
+
+   <label for="email">Your Email</label>
+   <input type="email" placeholder="Enter Your email" id="email" name="Email" required>
+  
+
+
+  <label for="size">Pizza Size</label>
+  <input list="sizes" name="size" id="size">
+
+  <datalist id="sizes">
+    <option value="Small">
+    <option value="Medium">
+    <option value="Large">
+  </datalist>
+
+    <label for="phone_number">Your Phone Number</label>
+    <input type="tel" id="phone_number" name="Phone Number" placeholder="123-456-7890" required>
+
+
+    Pizza Toppings<br>
+    <input type="checkbox" id="topping1" name="Topping1" value="Pepperoni">
+    <label for="topping1"> Pepperoni</label><br>
+    <input type="checkbox" id="topping2" name="Topping2" value="Mushrooms">
+    <label for="topping2"> Mushrooms</label><br>
+    <input type="checkbox" id="topping3" name="Topping3" value="Pineapple">
+    <label for="topping2"> Pineapple</label><br>
+    <input type="checkbox" id="topping4" name="Topping4" value="Sausage">
+    <label for="topping3">Sausage</label><br>
+
+   <label for="color">Color Picker </label>
+    <input type="color" id="color" name="Color">
+
+
+  <label for="date">Date</label>
+  <input type="date" id="date" name="Date" required>
+
+
+    <input type="submit" value="Order Your Pizza" >
+  </fieldset>
+ </form>
+</body>
+</html>

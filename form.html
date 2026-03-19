@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Form</title>
+  <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+<!-- <form action="" method="post"> Connect to formspree.io-->
+<form
+  action="https://formspree.io/f/mpqypyla"
+  method="POST"
+ >
+
+        <fieldset>
+            <legend>Talk with a Career Coach</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name"  required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text"  name="last-name" required>
+
+            <label for="program">Program: </label>
+            <input type="text" id="program" name="program" required>
+
+            <label for="datepciker">Date: </label>
+            <input type="date" id="datepciker" name="date" required>
+
+            <label for="appointmentTime">Time:</label>
+            <input type="time" id="appointmentTime" name="appointmentTime" required>
+            
+
+            <label for="year"> Degree & Year: </label>
+            <input list="yeardegree" id="year" name="year" required>
+               
+            
+            <datalist id="yeardegree">
+                    <option value="BSI 1st year">
+                    <option value="BSI 2nd year">
+                    <option value="BSI 3rd year">
+                    <option value="BSI 4th year">
+                    <option value="MSI 1st year">
+                    <option value="MSI 2nd year">
+                </datalist>
+
+            
+            <label for="comment">Comment: </label>
+            <textarea id="comment" name="comment" placeholder="please leave anything you think we need to know" rows="5" cols="50"></textarea>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
